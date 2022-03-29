@@ -1,0 +1,30 @@
+#L5 C1 Moon Base
+
+
+
+import socket
+
+def debugMsg(msg):
+	with open("/tmp/userdebug.log", "a") as myfile:
+		myfile.write(msg + "\n")
+
+debugMsg("All is work...")
+
+
+
+serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+serversocket.bind(("localhost", 10000))
+serversocket.listen(10)
+
+while True:
+    connection, address = serversocket.accept()
+
+    data = connection.recv(1024).decode()
+
+
+    if len(data) > 0:
+        debugMsg(f"Recieved: {data}")
+        with open("/tmp/aliensignallog.txt", "w") as file:
+            file.write(data)
+    break
+serversocket.close()
