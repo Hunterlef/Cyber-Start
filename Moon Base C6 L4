@@ -1,0 +1,33 @@
+import zipfile
+import itertools
+import time
+
+
+def extractFile(zip_file, password):
+    try:
+        zip_file.extractall('/tmp/', pwd=password)
+        return True
+    except KeyboardInterrupt:
+        exit(0)
+    except Exception as e:
+        pass
+
+
+zipfilename = 'alien-sample-42.zip'
+zip_file = zipfile.ZipFile(zipfilename)
+
+for x in possiblePasswordList:
+    print(x)
+    print
+    "Trying: %s" % x
+    if extractFile(zip_file, x):
+        print
+        '*' * 20
+        print
+        'Password found: %s' % x
+        print
+        'Files extracted...'
+        exit(0)
+print
+'Password not found.'
+
