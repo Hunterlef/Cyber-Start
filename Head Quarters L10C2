@@ -1,0 +1,2 @@
+#Put into any python IDE to calculate the number
+print(4096+sum([i for i in range(1,5521)]))
