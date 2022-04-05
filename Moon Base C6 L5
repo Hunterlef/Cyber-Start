@@ -1,0 +1,10 @@
+import socket
+clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client.connect(('localhost', 10000))
+client.send('GET_KEY'.encode())
+data = client.recv(1024)
+data2 = (data[::-1])
+client.send(data2)
+data3 = client.recv(1024)
+print(data3)
