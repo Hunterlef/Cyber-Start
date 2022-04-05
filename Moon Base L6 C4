@@ -1,0 +1,15 @@
+import zipfile
+import itertools
+
+
+
+for c in itertools.product(possiblePasswordList, repeat=1):
+  password = ''.join(c)
+  try:
+    with zipfile.ZipFile('/tmp/alien-sample-42.zip', 'r') as zip_ref:
+      zip_ref.extractall(path='/tmp', pwd = bytes(password, 'utf-8'))
+      break
+  except:
+    print('Password ' + password + ' failed')
+    
+pwd = bytes(password, 'utf-8')
