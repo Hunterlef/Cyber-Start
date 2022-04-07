@@ -54,4 +54,4 @@ LEVEL 9 HQ TUTORIAL BY HUNTER LEFLETT
 #12
 - You want to add to the link page.phps "https://118.279.0.1/page.phps"
 - You will see a bunch of the page's php stuff
-- 
+- Edit the url to https://118.279.0.1/login?user=%3Croot%3E (Look into the field manual for further understanding on why this does what it does)
