@@ -1,0 +1,57 @@
+LEVEL 9 HQ TUTORIAL BY HUNTER LEFLETT
+
+#1 Centrifuge Exposed
+- Add a cookie editor to your web browser
+- Add a cookie named "userLoggedIn" (Case sensitive)
+- Click log in and you will get your flag
+
+#2
+
+
+
+#3 Hidden Centrifuge
+- Edit your URL like this https://www.powercentrifuge.com/robots.txt
+- At the bottom of the page you will see Disallow: /testtubes.html
+- Add this extension to the URL like this
+- You will see the flag at the bottom of the page
+
+
+#4 Bunsen Burners
+- Add this Javascript to the comment section: <script>alert(Kaboom!);</script>
+- Click add comment and you will get the flag
+
+#5 Hayka
+- Create a .txt file on your computer
+- Write <?php echo "b1n4ry"; ?> in the text file
+- Change the file to a .php file 
+- Submit the php file you made into the "Upload paper for review"
+- Change URL to https://www.hellohayka.com/"what ever your file name is" (Case sensitive)
+- You will see the flag at the bottom of the page
+
+#6
+
+
+#7
+- On the website you will see a bank
+- You will also have an email
+- Click complete transfer and you will see the link change
+- Copy the link extension "/transfer?amount=&recipient=cpa"
+- Paste this into the email "/transfer?amount=1000&recipient=cpa"
+- You will get the flag once you click send
+
+#8
+
+
+#9
+
+
+#10
+
+
+#11
+
+
+#12
+- You want to add to the link page.phps "https://118.279.0.1/page.phps"
+- You will see a bunch of the page's php stuff
+- 
