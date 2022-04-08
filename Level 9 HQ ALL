@@ -48,8 +48,17 @@ LEVEL 9 HQ TUTORIAL BY HUNTER LEFLETT
 #10
 
 
-#11
-
+#11 Tayga Bears
+- Download all of the bear images to one directory
+- Change your directory the directory of the bear images (make sure this directory ONLY has the bear images)
+- Open your terminal and run this script
+for f in $(ls)
+do
+mv $f $f.zip
+unzip $f.zip
+done
+- You will then see a "msg" file in the file
+- Run ./msg to see the flag
 
 #12
 - You want to add to the link page.phps "https://118.279.0.1/page.phps"
