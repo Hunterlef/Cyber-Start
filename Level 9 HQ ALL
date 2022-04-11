@@ -5,8 +5,13 @@ LEVEL 9 HQ TUTORIAL BY HUNTER LEFLETT
 - Add a cookie named "userLoggedIn" (Case sensitive)
 - Click log in and you will get your flag
 
-#2
-
+#2 Cold File
+- Change the file to a .txt
+- You will see "enter the password" 
+- You will see a word above it
+- chmod +x the program
+- ./ the program
+- Enter that password to get the flag
 
 
 #3 Hidden Centrifuge
